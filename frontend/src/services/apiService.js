@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://crypto-portfolio-app.onrender.com';
+const API_URL = 'https://crypto-portfolio-app.onrender.com/api/tokens';
 
 export const getTokens = async (walletAddress) => {
 
