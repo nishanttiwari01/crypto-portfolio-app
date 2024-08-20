@@ -23,6 +23,11 @@ mongoose.connect(dbConfig.mongoURI, {
     console.error('MongoDB connection error:', err);
 });
 
+// Base URL route
+app.get('/', (req, res) => {
+    res.send('Hello');
+  });
+
 // Routes
 app.use('/api/tokens', tokenRoutes);
 
