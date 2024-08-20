@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0d1117; /* Darker background for a more modern look */
+  color: #c9d1d9; /* Softer text color for better readability */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: flex-start; /* Align content to the top */
+  min-height: 100vh; /* Ensure the body takes up full height of the viewport */
+}
+
+/* Container for the app content */
+.App {
+  padding: 20px;
+  max-width: 900px;
+  width: 100%; /* Ensure the App container takes up full available width */
+  margin: 20px;
+  background-color: #161b22; /* Slightly lighter background for the content area */
+  border-radius: 10px; /* Rounded corners for the content area */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Slightly stronger shadow for better depth */
+  display: flex;
+  flex-direction: column; /* Keep the content inside .App arranged in a column */
+}
+
+/* Headings */
+h1, h2 {
+  color: #ffffff; /* Pure white color for headings for contrast */
+  font-weight: bold;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling on small screens */
+}
+
+table, th, td {
+  border: 1px solid #343a40; /* Dark border color for subtle separation */
+}
+
+th, td {
+  padding: 14px; /* Increased padding for better readability */
+  text-align: left;
+}
+
+th {
+  background-color: #21262d; /* Darker background for table headers */
+  color: #c9d1d9; /* Softer color for header text */
+}
+
+td {
+  background-color: #161b22; /* Consistent background for table cells */
+  color: #e6edf3; /* Softer color for table cell text */
+}
+
+/* Button Styles */
+button {
+  padding: 12px 24px;
+  background-color: #238636; /* Bright green color for primary action */
+  color: #fff;
+  border: none;
+  border-radius: 6px; /* Slightly more rounded corners for buttons */
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #2ea043; /* Slightly darker green for hover state */
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Input and Select Styles */
+input[type="text"], input[type="date"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #343a40; /* Border matching table border color */
+  border-radius: 4px;
+  background-color: #0d1117; /* Background matching overall theme */
+  color: #c9d1d9; /* Softer text color */
+}
+
+input[type="text"]:focus, input[type="date"]:focus, input[type="number"]:focus {
+  outline: none;
+  border-color: #238636; /* Green border on focus for consistency */
+}
+
+/* Date Picker Icon Customization */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1); /* Make the date picker icon white */
+}
+
+/* Select Styles */
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #343a40;
+  border-radius: 4px;
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+select:focus {
+  outline: none;
+  border-color: #238636;
+}
+
+/* Link Styles */
+a {
+  color: #58a6ff; /* Bright blue for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .App {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem; /* Smaller font size for headings on mobile */
+  }
+
+  th, td {
+    padding: 10px; /* Reduce padding in table cells */
+    font-size: 0.875rem; /* Reduce font size in table cells */
+  }
+
+  button {
+    padding: 10px 20px; /* Adjust button padding on mobile */
+    font-size: 0.875rem; /* Adjust button font size on mobile */
+  }
+
+  input[type="text"], input[type="date"], input[type="number"], select {
+    padding: 8px; /* Reduce padding in form fields */
+    font-size: 0.875rem; /* Adjust font size in form fields */
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.25rem; /* Even smaller font size for headings on small screens */
+  }
+
+  th, td {
+    padding: 8px; /* Further reduce padding in table cells */
+  }
+
+  button {
+    padding: 8px 16px; /* Adjust button padding on small screens */
+    font-size: 0.75rem; /* Smaller button font size */
+  }
+
+  input[type="text"], input[type="date"], input[type="number"], select {
+    padding: 6px; /* Further reduce padding in form fields */
+    font-size: 0.75rem; /* Smaller font size in form fields */
+  }
+
+  .App {
+    margin: 5px;
+  }
+}
+
+
+
+
